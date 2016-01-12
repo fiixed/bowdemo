@@ -13,12 +13,15 @@ angular.module('starter.controllers', [])
         });
     }
 })
-.controller('MainCtrl', function($scope, $location) {
+.controller('MainCtrl', function($scope, $location, jillreacher) {
+
+  $scope.jillreacher = jillreacher;
+  
   $scope.go = function(hash) {
     $location.path('getbadge');
   }
 })
 
 .controller('CompleteCtrl', function($scope, $location) {
-  
+
 });

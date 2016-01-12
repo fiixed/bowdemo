@@ -1,13 +1,17 @@
 <ion-view hide-nav-bar="true" name="login-view">
   <ion-content class="padding">
-      <div class="list list-inset">
-          <label class="item item-input">
-              <input type="text" placeholder="Username" ng-model="data.username">
-          </label>
-          <label class="item item-input">
-              <input type="password" placeholder="Password" ng-model="data.password">
-          </label>
+    <div class="list-card list-inset list-positive">
+      <div class="item item-divider item-positive">
+        LOGIN NOW
+        <hr/>
       </div>
-      <button class="button button-block button-calm" ng-click="login()">Login</button>
+      <label class="item item-input">
+        <input type="text" placeholder="Enter User Name" ng-model="data.username">
+      </label>
+      <label class="item item-input">
+        <input type="password" placeholder="Enter Password" ng-model="data.password">
+      </label>
+    </div>
+    <button class="button button-block button-balanced" ng-click="login()">LOG ME IN</button>
   </ion-content>
 </ion-view>

@@ -54,4 +54,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/login');
   $ionicConfigProvider.navBar.alignTitle('center');
+})
+.factory('jillreacher', function(){
+  var jillreacher = {
+    name: "Jill Reacher",
+    department: "Digital Business Services",
+    title: "UX Designer",
+    description: "I'm working on a new format for UI spec for Mattel.",
+    date: "Jun 7 7:21PM"
+  };
+  return jillreacher;
 });
