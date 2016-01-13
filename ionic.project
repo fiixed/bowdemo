@@ -1,4 +1,12 @@
 {
   "name": "simple-login",
-  "app_id": "16555478"
+  "app_id": "16555478",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
 }
