@@ -9,13 +9,10 @@
       </div>
 
       <div class="item item-image">
-        <img src="cover.jpg">
+         <img ng-src="{{lastPhoto}}" style="max-width: 50%">
       </div>
       <div class="item">
-
-
-        <a class="button button-icon-right button-positive" href="#">
-
+        <a class="button button-icon-right button-positive" href="#" ng-click="getPhoto()">
           TAKE/SELECT PHOTO
           <i class="icon ion-camera"></i>
         </a>

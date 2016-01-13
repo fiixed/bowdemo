@@ -22,4 +22,32 @@ angular.module('starter.services', [])
             return promise;
         }
     }
+})
+.factory('Camera', ['$q', function($q) {
+
+  return {
+    getPicture: function(options) {
+      var q = $q.defer();
+
+      navigator.camera.getPicture(function(result) {
+        // Do any magic you need
+        q.resolve(result);
+      }, function(err) {
+        q.reject(err);
+      }, options);
+
+      return q.promise;
+    }
+  }
+}])
+.factory('jillreacher', function(){
+  var jillreacher = {
+    name: "Jill Reacher",
+    department: "Digital Business Services",
+    title: "UX Designer",
+    description: "I'm working on a new format for UI spec for Mattel.",
+    date: "Jun 7 7:21PM",
+    imageURI: ""
+  };
+  return jillreacher;
 });

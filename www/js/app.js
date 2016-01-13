@@ -42,8 +42,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   })
   .state('getbadge', {
       url: '/getbadge',
-      templateUrl: 'templates/getbadge.html'
-      // controller: 'GetBadgeCtrl'
+      templateUrl: 'templates/getbadge.html',
+      controller: 'GetBadgeCtrl'
   })
   .state('completeprocess', {
       url: '/completeprocess',
@@ -55,13 +55,3 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   $urlRouterProvider.otherwise('/login');
   $ionicConfigProvider.navBar.alignTitle('center');
 })
-.factory('jillreacher', function(){
-  var jillreacher = {
-    name: "Jill Reacher",
-    department: "Digital Business Services",
-    title: "UX Designer",
-    description: "I'm working on a new format for UI spec for Mattel.",
-    date: "Jun 7 7:21PM"
-  };
-  return jillreacher;
-});
