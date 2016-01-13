@@ -9,17 +9,20 @@
       </div>
 
       <div class="item item-image">
-         <img ng-src="{{lastPhoto}}" style="max-width: 50%">
+        <img ng-src="{{lastPhoto}}" style="max-width: 50%">
       </div>
-      <div class="item">
+      <div class="item" ng-show="!taken">
         <a class="button button-icon-right button-positive" href="#" ng-click="getPhoto()">
           TAKE/SELECT PHOTO
           <i class="icon ion-camera"></i>
         </a>
       </div>
 
-    </div>
-    <a class="button" ui-sref="home"><i class="icon ion-ios-arrow-back"></i> Back</a>
-    <a class="button" nav-direction="forward" ui-sref="completeprocess">Complete Process <i class="icon ion-ios-arrow-forward"></a>
-  </ion-content>
-</ion-view>
+
+    </div >
+    <div ng-show="complete">
+      <a class="button" ui-sref="home"><i class="icon ion-ios-arrow-back"></i> Back</a>
+      <a class="button" nav-direction="forward" ui-sref="completeprocess">Complete Process <i class="icon ion-ios-arrow-forward"></i></a>
+      </div>
+    </ion-content>
+  </ion-view>

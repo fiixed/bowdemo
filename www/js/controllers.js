@@ -28,11 +28,17 @@ angular.module('starter.controllers', [])
 
 .controller('GetBadgeCtrl', function($scope, Camera, jillreacher) {
 
+  $scope.taken = false;
+  $scope.complete = false;
+
   $scope.getPhoto = function() {
+    $scope.taken = true;
     Camera.getPicture({cameraDirection: 1}).then(function(imageURI) {
       console.log(imageURI);
       $scope.lastPhoto = imageURI;
       jillreacher.imageURI = imageURI;
+      $scope.complete = true;
+
     }, function(err) {
       console.err(err);
     }, {
