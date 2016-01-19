@@ -15,17 +15,19 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
-$stable:                          #d3d3d3 !default;
-$positive:                        #1980b8 !default;
-$balanced:                        #9bca3c !default;
-$energized:                       #f15c27 !default;
+$stable:                          #d3d3d3 !default; // light gray
+$positive:                        #1980b8 !default; // blue
+$balanced:                        #9bca3c !default; // green
+$energized:                       #f15c27 !default; // orange
+$dark:                            rgb(113,113, 110) !default; // dark gray
+$black:                           #2a2e34 !default; // black
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 @font-face {
   font-family: 'MontserratSemiBold';
-  src: url('../fonts/Montserrat-SemiBold.otf') format('opentype');
+  src: url('..//fonts/Montserrat-SemiBold.otf') format('opentype');
 }
 
 @font-face {
@@ -33,10 +35,17 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   src: url('../fonts/Montserrat-Regular.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+}
+
 // @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 $headings-font-family: 'Montserrat';
 $font-family-base: 'MontserratSemiBold';
-
+$font-family-serif: 'OpenSansLight';
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
+// Include custom styles
+@import "scss/bowStyles/main";

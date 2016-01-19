@@ -1,0 +1,66 @@
+// Vars
+$default-font-size: 16px;
+$h1-font-size: 20px;
+$h2-font-size: 17px;
+$h3-font-size: 16px;
+
+html, body{
+  font-size: $default-font-size;
+  color: $stable; // Light Gray - #d3d3d3
+}
+
+h1, h2, h3{
+  font-family: $headings-font-family;
+  color: $dark;
+  font-style:bold;
+}
+
+h4, h5, h6 {
+  font-family: $headings-font-family;
+}
+
+h1, .title{
+  font-size: $h1-font-size;
+}
+
+h2{
+  font-size: $h1-font-size;
+}
+
+h3, .item-divider{
+  font-size: $h3-font-size;
+}
+p {
+  font-family: $headings-font-family;
+}
+
+ion-checkbox {
+  font-family: $font-family-base;
+}
+
+.logo{
+  height: 250px;
+  width: 250px;
+}
+
+.center{
+  margin: 0 auto;
+  display: block;
+}
+
+.no-padding-horizontal{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.no-padding-vertical{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.no-background{
+  background: none;
+}
+
+.no-border{
+  border: none;
+}

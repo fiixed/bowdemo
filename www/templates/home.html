@@ -5,8 +5,19 @@
         Your Activities
       </div>
       <div class="item item-text-wrap" >
-        <ion-checkbox ng-click="go('/getbadge')">Complete new hire activity (on Step 4)</ion-checkbox>
-        <ion-checkbox>Set up Sametime</ion-checkbox>
+        <label class="checkbox checkbox-square">
+          <ion-checkbox ng-click="go('/getbadge')">
+            <p>
+              Complete new hire activity (on Step 4)
+            </p>
+
+          </ion-checkbox>
+        </label>
+        <label class="checkbox checkbox-square">
+          <ion-checkbox><p>
+            Set up Sametime
+          </p></ion-checkbox>
+        </label>
       </div>
 
     </div>
@@ -14,28 +25,14 @@
       <div class="item item-divider item-positive">
         Status Updates
       </div>
-      <div class="item item-avatar">
-        <img src="mcfly.jpg">
-        <h2>{{jillreacher.name}}</h2>
-        <p>{{jillreacher.description}}</p>
-        <p>{{jillreacher.date}}</p>
+      <div class="item item-avatar item-text-wrap" ng-repeat="person in jillreacher">
+        <img src="{{person.imageURI}}">
+        <h2>{{person.name}}</h2>
+        <p>{{person.description}}</p>
+        <p>{{person.date}}</p>
+        <hr>
       </div>
-      <div class="item item-avatar">
-        <img src="mcfly.jpg">
-        <h2>Rick Helmick</h2>
-        <p>I'm working on a new format for UI spec for Mattel</p>
-        <p>
-          Jun 6 5:10PM
-        </p>
-      </div>
-      <div class="item item-avatar">
-        <img src="mcfly.jpg">
-        <h2>Jack Reacher</h2>
-        <p>I'm working on a new format for UI spec for Mattel</p>
-        <p>
-          Jun 3 4:20PM
-        </p>
-      </div>
+
 
     </div>
   </ion-content>

@@ -1,0 +1,61 @@
+.card {
+  border-radius: 4px !important;
+}
+
+.login-header{
+  margin-bottom: -6px;
+}
+
+.login-card {
+  background-color: $positive;
+  border-radius: 4px;
+  border:1px solid gray;
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  margin: none;
+
+
+
+  .rounded{
+    border-radius:4px !important;
+    border:1px solid gray;
+    margin-bottom: 15px;
+    height: 34px;
+
+    input, input::-webkit-input-placeholder{
+      font-family: $font-family-serif;
+      color: $dark;
+    }
+  }
+
+  .login-button{
+    height:2.125rem !important;
+    min-height: 10px;
+    line-height: 34px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0;
+  }
+}
+
+.checkbox {
+  padding: 0px;
+}
+
+.checkbox-icon {
+  margin-top: 6px;
+  width: 45px;
+  height: 45px;
+}
+
+.item-divider {
+  height: 40px;
+  font-size: 1.063rem;
+  font-family: $headings-font-family;
+}
+.item-avatar {
+  border: 0px;
+}
+
+// .item-text-wrap {
+//   padding: 0px;
+// }

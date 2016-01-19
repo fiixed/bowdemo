@@ -1,0 +1,24 @@
+i {
+  font-size: 32px;
+}
+
+.pane, .view {
+  background-color: $stable;
+}
+
+.ion-search {
+  margin-right: 5px;
+}
+
+.ion-earth {
+  margin-left: 75px;
+}
+
+.ion-navicon-round {
+  margin-left: 5px;
+}
+
+// overriding ionic css
+.platform-android .bar .title {
+  font-size: 1.25rem;
+}
