@@ -36,7 +36,7 @@ angular.module('starter.controllers', [])
     Camera.getPicture({cameraDirection: 1}).then(function(imageURI) {
       console.log(imageURI);
       $scope.lastPhoto = imageURI;
-      jillreacher.imageURI = imageURI;
+      jillreacher[0].imageURI = imageURI;
       $scope.complete = true;
 
     }, function(err) {

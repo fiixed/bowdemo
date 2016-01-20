@@ -10,8 +10,8 @@ i {
   margin-right: 5px;
 }
 
-.ion-earth {
-  margin-left: 75px;
+.ion-earth::before{
+
 }
 
 .ion-navicon-round {
@@ -21,4 +21,16 @@ i {
 // overriding ionic css
 .platform-android .bar .title {
   font-size: 1.25rem;
+}
+
+.title.title-center.header-item{
+    font-size: $h1-font-size;
+
+  &:before{
+    content: "\f276";
+    font-family: "Ionicons";
+    margin-right: 4px;
+    font-size: 25px;
+    vertical-align: middle;
+  }
 }

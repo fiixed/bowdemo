@@ -1,28 +1,27 @@
-<ion-view view-title="ATS CORP">
+<ion-view view-title="ATS CORP" ng-controller="GetBadgeCtrl">
   <ion-content>
     <div class="list card">
 
       <div class="item">
 
         <h2>Get Your Facility Badge</h2>
-        <p>Congratulations, this is  your last step in the Onboarding Process.</p>
+        <p class="wrap">Congratulations, this is  your last step in the Onboarding Process.</p>
       </div>
 
       <div class="item item-image">
-        <img ng-src="{{lastPhoto}}" style="max-width: 50%">
-      </div>
-      <div class="item" ng-show="!taken">
-        <a class="button button-icon-right button-positive" href="#" ng-click="getPhoto()">
-          TAKE/SELECT PHOTO
-          <i class="icon ion-camera"></i>
-        </a>
+        <img ng-src="{{taken ? lastPhoto : 'img/adam.jpg'}}" style="max-width: 50%">
       </div>
 
+      <div  ng-show="!taken">
+        <a class="button icon-right button-positive" ng-click="getPhoto()">TAKE/SELECT PHOTO
+        <i class="icon ion-camera"></i></a>
+      </div>
 
-    </div >
+    </div>
+
     <div ng-show="complete">
       <a class="button" ui-sref="home"><i class="icon ion-ios-arrow-back"></i> Back</a>
       <a class="button" nav-direction="forward" ui-sref="completeprocess">Complete Process <i class="icon ion-ios-arrow-forward"></i></a>
-      </div>
-    </ion-content>
-  </ion-view>
+    </div>
+  </ion-content>
+</ion-view>

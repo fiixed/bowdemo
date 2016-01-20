@@ -54,6 +54,19 @@
 }
 .item-avatar {
   border: 0px;
+  padding-bottom: 8px;
+  padding-top: 5px;
+}
+
+.item-avatar > img:first-child, .item-avatar .item-image, .item-avatar .item-content > img:first-child, .item-avatar .item-content .item-image, .item-avatar-left > img:first-child, .item-avatar-left .item-image, .item-avatar-left .item-content > img:first-child, .item-avatar-left .item-content .item-image {
+  max-width: 70px;
+  max-height: 70px;
+  width: 100%;
+  height: 100%;
+}
+
+.detail {
+  margin-left: 25px;
 }
 
 // .item-text-wrap {
