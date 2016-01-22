@@ -9749,8 +9749,7 @@ html, body {
 
 h1, h2, h3 {
   font-family: "Montserrat";
-  color: #71716e;
-  font-style: bold; }
+  color: #d3d3d3; }
 
 h4, h5, h6 {
   font-family: "Montserrat"; }
@@ -9762,10 +9761,12 @@ h2 {
   font-size: 20px; }
 
 h3, .item-divider {
-  font-size: 16px; }
+  font-size: 17px; }
 
 p {
-  font-family: "Montserrat"; }
+  font-family: "Montserrat";
+  word-wrap: normal;
+  white-space: normal !important; }
 
 ion-checkbox {
   font-family: "MontserratSemiBold"; }
@@ -9836,7 +9837,8 @@ ion-checkbox {
 .item-avatar {
   border: 0px;
   padding-bottom: 8px;
-  padding-top: 5px; }
+  padding-top: 5px;
+  background-color: transparent; }
 
 .item-avatar > img:first-child, .item-avatar .item-image, .item-avatar .item-content > img:first-child, .item-avatar .item-content .item-image, .item-avatar-left > img:first-child, .item-avatar-left .item-image, .item-avatar-left .item-content > img:first-child, .item-avatar-left .item-content .item-image {
   max-width: 70px;
@@ -9846,6 +9848,25 @@ ion-checkbox {
 
 .detail {
   margin-left: 25px; }
+
+.photo {
+  max-width: 150px !important;
+  max-height: 150px !important;
+  width: 100%;
+  height: 100%; }
+
+.row-photo {
+  height: 200px; }
+
+.button.button-balanced.rounded-button {
+  border-radius: 50%;
+  font-size: 18px;
+  border: 2px solid white;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+  margin-top: 8px; }
+
+.item h2 {
+  font-size: 18px; }
 
 i {
   font-size: 32px; }

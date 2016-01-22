@@ -1,27 +1,50 @@
 <ion-view view-title="ATS CORP" ng-controller="GetBadgeCtrl">
   <ion-content>
-    <div class="list card">
-
-      <div class="item">
-
-        <h2>Get Your Facility Badge</h2>
-        <p class="wrap">Congratulations, this is  your last step in the Onboarding Process.</p>
+    <div class="row">
+      <div class="col">
+        <button class="button button-balanced rounded-button">1</button>
       </div>
-
-      <div class="item item-image">
-        <img ng-src="{{taken ? lastPhoto : 'img/adam.jpg'}}" style="max-width: 50%">
+      <div class="col">
+        <button class="button button-balanced rounded-button">2</button>
       </div>
+      <div class="col">
+        <button class="button button-balanced rounded-button">3</button>
+      </div>
+      <div class="col">
+        <button class="button button-balanced rounded-button">4</button>
+      </div>
+      <div class="col">
+        <button class="button button-balanced rounded-button">5</button>
+      </div>
+      <div class="col">
+        <button class="button button-balanced rounded-button">6</button>
+      </div>
+    </div>
 
-      <div  ng-show="!taken">
+    <div class="item no-background no-border">
+      <h2 style="color: black">Get Your Facility Badge</h2>
+      <p style="color: black">Congratulations, this is  your last step in the Onboarding Process.</p>
+    </div>
+
+    <div class="row row-photo">
+      <div class="col"></div>
+      <div class="item item-avatar col-50">
+        <img ng-src="{{taken ? lastPhoto : 'img/adam.jpg'}}" class="photo">
+      </div>
+      <div class="col"></div>
+    </div>
+    <div class="row">
+      <div class="col"></div>
+      <div  class="col col-75" ng-show="!taken">
         <a class="button icon-right button-positive" ng-click="getPhoto()">TAKE/SELECT PHOTO
-        <i class="icon ion-camera"></i></a>
+          <i class="icon ion-camera"></i></a>
+        </div>
+        <div class="col"></div>
       </div>
-
-    </div>
-
-    <div ng-show="complete">
-      <a class="button" ui-sref="home"><i class="icon ion-ios-arrow-back"></i> Back</a>
-      <a class="button" nav-direction="forward" ui-sref="completeprocess">Complete Process <i class="icon ion-ios-arrow-forward"></i></a>
-    </div>
-  </ion-content>
-</ion-view>
+      
+      <div ng-show="complete">
+        <a class="button" ui-sref="home"><i class="icon ion-ios-arrow-back"></i> Back</a>
+        <a class="button" nav-direction="forward" ui-sref="completeprocess">Complete Process <i class="icon ion-ios-arrow-forward"></i></a>
+      </div>
+    </ion-content>
+  </ion-view>

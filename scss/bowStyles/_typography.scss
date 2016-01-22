@@ -1,8 +1,8 @@
 // Vars
 $default-font-size: 16px;
 $h1-font-size: 20px;
-$h2-font-size: 17px;
-$h3-font-size: 16px;
+$h2-font-size: 18px;
+$h3-font-size: 17px;
 
 html, body{
   font-size: $default-font-size;
@@ -11,8 +11,8 @@ html, body{
 
 h1, h2, h3{
   font-family: $headings-font-family;
-  color: $dark;
-  font-style:bold;
+  color: $stable;
+  // font-style:bold;
 }
 
 h4, h5, h6 {
@@ -32,6 +32,8 @@ h3, .item-divider{
 }
 p {
   font-family: $headings-font-family;
+  word-wrap: normal;
+  white-space: normal !important;
 }
 
 ion-checkbox {
