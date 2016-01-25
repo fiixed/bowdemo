@@ -9,14 +9,14 @@
       <div class="item item-text-wrap" >
         <label class="checkbox checkbox-square">
           <ion-checkbox ng-click="go('/getbadge')">
-            <p>
-              Complete new hire activity (on Step 6)
+            <p style="font-family: 'OpenSans'; color: #9ba3aa; font-size: 0.875rem; margin-left: 40px">
+              Complete facility badge (on Step 6)
             </p>
 
           </ion-checkbox>
         </label>
         <label class="checkbox checkbox-square">
-          <ion-checkbox><p>
+          <ion-checkbox><p style="font-family: 'OpenSans'; color: #9ba3aa; font-size: 0.875rem; margin-left: 40px">
             Set up Sametime
           </p></ion-checkbox>
         </label>
@@ -32,12 +32,33 @@
       <div class="item item-avatar" ng-repeat="person in jillreacher">
         <img src="{{person.imageURI}}">
         <div class="detail">
-          <h2>{{person.name}}</h2>
-          <p>{{person.description}}</p>
-          <p>{{person.date}}</p>
+          <p style="color: #9ba3aa; font-size: 0.875rem; margin-bottom: -2px">{{person.name}}</p>
+          <p style="color: #9ba3aa; font-size: 0.8125rem;">{{person.description}}</p>
+          <p style="color: #9ba3aa; font-size: 0.6875rem">{{person.date}}</p>
+          <span ng-if="person.showHR">
+            <hr style="color: #b7b7b7; border: 1px, solid">
+          </span>
         </div>
 
-        <hr>
+
+      </div>
+    </div>
+    <div class="card">
+      <div class="item item-divider item-positive">
+        News Feed<div class="float-right">
+
+      <span class="right-icon">VIEW ALL</span><i class="icon ion-android-arrow-dropright-circle"></i>  </div>
+      </div>
+      <div class="item item-avatar" ng-repeat="person in jillreacher">
+        <img src="{{person.imageURI}}">
+        <div class="detail">
+          <p style="color: #9ba3aa; font-size: 0.875rem; margin-bottom: -2px">{{person.name}}</p>
+          <p style="color: #9ba3aa; font-size: 0.8125rem">{{person.description}}</p>
+          <p style="color: #9ba3aa; font-size: 0.6875rem">{{person.date}}</p>
+            <hr style="color: #b7b7b7; border: 1px, solid">
+        </div>
+
+
       </div>
     </div>
   </ion-content>

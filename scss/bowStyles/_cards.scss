@@ -52,17 +52,23 @@ hr {
 }
 
 .item-text-wrap {
-  padding: 3px !important;
+  padding: 0px;
+
 }
 
 .checkbox {
   padding: 0px;
 }
 
+.item-checkbox {
+  padding: 14px;
+}
+
+
 .checkbox-icon {
-  margin-top: 6px;
-  width: 45px;
-  height: 45px;
+  margin-top: 8px;
+  width: 40px;
+  height: 40px;
 }
 
 .item-divider {
@@ -73,19 +79,28 @@ hr {
 .item-avatar {
   border: 0px;
   padding-bottom: 8px;
-  padding-top: 5px;
+  padding-top: 10px;
   background-color: rgba(0, 0, 0, 0);
+  margin-top: -5px;
+  margin-bottom: -15px;
 }
 
 .item-avatar > img:first-child, .item-avatar .item-image, .item-avatar .item-content > img:first-child, .item-avatar .item-content .item-image, .item-avatar-left > img:first-child, .item-avatar-left .item-image, .item-avatar-left .item-content > img:first-child, .item-avatar-left .item-content .item-image {
-  max-width: 70px;
-  max-height: 70px;
+  max-width: 80px;
+  max-height: 80px;
   width: 100%;
-  height: 100%;
+  height: auto;
+  top: 12px;
+  left: 8px;
+
 }
 
 .detail {
-  // margin-left: 25px;
+  margin-left: 25px;
+  hr {
+    margin-top: 5px;
+  }
+
 }
 
 .item-avatar > img:first-child.badge-photo{
