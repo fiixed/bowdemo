@@ -21,6 +21,8 @@ $balanced:                        #9bca3c !default; // green
 $energized:                       #f15c27 !default; // orange
 $dark:                            rgb(113,113, 110) !default; // dark gray
 $black:                           #2a2e34 !default; // black
+$royal:                           #406571 !default;
+
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
@@ -38,6 +40,11 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @font-face {
   font-family: 'OpenSansLight';
   src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
 }
 
 // @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);

@@ -47,21 +47,21 @@ angular.module('starter.services', [])
     title: "UX Designer",
     description: "I'm working on a new format for UI spec for Mattel.",
     date: "Jun 7 7:21PM",
-    imageURI: "img/adam.jpg"
+    imageURI: "img/JillReacher-ProfilePic.png"
   }, {
     name: "Rick Helmick",
     department: "Digital Business Services",
     title: "UX Designer",
     description: "I'm working on a new format for UI spec for Mattel.",
     date: "Jun 6 5:10PM",
-    imageURI: "img/ben.png"
+    imageURI: "img/RickHelmick-ProfilePic.png"
   },{
     name: "Jack Reacher",
     department: "Digital Business Services",
     title: "UX Designer",
     description: "I'm working on a new format for UI spec for Mattel.",
     date: "Jun 3 4:20PM",
-    imageURI: "img/perry.png"
+    imageURI: "img/SteveJobs-ProfilePic.png"
   }];
   return jillreacher;
 });
