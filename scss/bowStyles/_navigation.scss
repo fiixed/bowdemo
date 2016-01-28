@@ -29,8 +29,15 @@ i {
   &:before{
     content: "\f276";
     font-family: "Ionicons";
-    margin-right: 4px;
-    font-size: 25px;
-    vertical-align: middle;
+    margin-right: 6px;
+    font-size: 28px;
+    vertical-align: top;
   }
+}
+
+.back-btn {
+  border: 2px;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: #7f7f7f !important;
 }

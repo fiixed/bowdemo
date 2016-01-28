@@ -5,6 +5,7 @@
 
 .login-header{
   margin-bottom: -12px;
+  margin-top: -8px;
 }
 
 hr {
@@ -103,13 +104,49 @@ hr {
 
 }
 
-.item-avatar > img:first-child.badge-photo{
-  max-width: 170px;
-  max-height: 170px;
+.custom-avatar {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 2px solid $positive;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+
+  img.badge-photo{
+    position: relative;
+    width: 170px;
+    height: auto;
+    margin-left:-2px !important;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+.custom-avatar-card {
+  position: relative;
+  max-width: 80px;
+  max-height: 80px;
   width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid $positive;
+  overflow: hidden;
+  float:left;
+  margin-left:-65px;
+
+  img{
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 }
 
 .row-photo {
@@ -137,31 +174,42 @@ hr {
   }
 }
 
-// .button.button-joined {
-//   font-family: MontserratSemiBold;
-//   font-size: 0.9375rem;
-//   min-height: 15px;
 
-.button-left {
-border-radius: 4px 0 0 4px;
-  height: 10px;
+.button-two-tone{
+  padding: 0;
+  border: 2px;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: $royal !important;
+  overflow: hidden;
+  height: 35px;
   font-size: 15px;
   min-height: 35px;
   line-height: 32px;
-  margin-right: -4px;
-}
 
-.button-right {
-border-radius: 0 4px 4px 0;
-  min-height: 35px;
-  line-height: 17px;
-  width: 8px;
-  padding: 0px;
-
-}
-
-.icon-custom {
-  font-size:25px;
+  span.right{
+    margin-right:12px;
+    margin-left: 10px;
+  }
+  span.left{
+    margin-left:12px;
+    margin-right: 10px;
+  }
+  i.right{
+    background-color: $royal;
+    height:100%;
+    width: 50px;
+    float: right;
+  }
+  i.left{
+    background-color: #7f7f7f;
+    height:100%;
+    width: 50px;
+    float: left;
+    &:before{
+      color:white !important;
+    }
+  }
 }
 
 .float-right {
@@ -175,5 +223,25 @@ border-radius: 0 4px 4px 0;
 
 .ion-android-arrow-dropright-circle {
   font-size: 17px;
+}
 
+i.icon.ion-android-arrow-dropright-circle {
+    &:before {
+      vertical-align:middle;
+    }
+}
+
+.employee-container{
+  .custom-avatar-card{
+    border: 2px solid black;
+  }
+  .custom-avatar-card:first-child {
+    border-color: $balanced;
+  }
+  &:nth-child(2) .custom-avatar-card{
+    border-color: $positive;
+  }
+  &:nth-child(3) .custom-avatar-card{
+    border-color: $energized;
+  }
 }

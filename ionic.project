@@ -1,5 +1,5 @@
 {
-  "name": "simple-login",
+  "name": "bow-demo",
   "app_id": "16555478",
   "gulpStartupTasks": [
     "sass",

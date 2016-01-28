@@ -29,8 +29,10 @@
 
       <span class="right-icon">VIEW ALL</span><i class="icon ion-android-arrow-dropright-circle"></i>  </div>
       </div>
-      <div class="item item-avatar" ng-repeat="person in jillreacher">
-        <img src="{{person.imageURI}}">
+      <div class="item item-avatar employee-container" ng-repeat="person in jillreacher">
+        <span class="custom-avatar-card">
+          <img src="{{person.imageURI}}">
+        </span>
         <div class="detail">
           <p style="color: #9ba3aa; font-size: 0.875rem; margin-bottom: -2px">{{person.name}}</p>
           <p style="color: #9ba3aa; font-size: 0.8125rem;">{{person.description}}</p>
@@ -49,13 +51,18 @@
 
       <span class="right-icon">VIEW ALL</span><i class="icon ion-android-arrow-dropright-circle"></i>  </div>
       </div>
-      <div class="item item-avatar" ng-repeat="person in jillreacher">
-        <img src="{{person.imageURI}}">
+      <div class="item item-avatar employee-container" ng-repeat="person in jillreacher">
+        <span class="custom-avatar-card">
+          <img src="{{person.imageURI}}">
+        </span>
+
         <div class="detail">
           <p style="color: #9ba3aa; font-size: 0.875rem; margin-bottom: -2px">{{person.name}}</p>
           <p style="color: #9ba3aa; font-size: 0.8125rem">{{person.description}}</p>
           <p style="color: #9ba3aa; font-size: 0.6875rem">{{person.date}}</p>
+          <span ng-if="person.showHR">
             <hr style="color: #b7b7b7; border: 1px, solid">
+          </span>
         </div>
 
 

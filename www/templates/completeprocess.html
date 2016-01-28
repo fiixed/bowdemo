@@ -1,38 +1,57 @@
 <ion-view view-title="DSD CORP">
-  <ion-content>
-    <div class="row">
-      <div class="col">
-        <button class="button button-balanced rounded-button">1</button>
-      </div>
-      <div class="col">
-        <button class="button button-balanced rounded-button">2</button>
-      </div>
-      <div class="col">
-        <button class="button button-balanced rounded-button">3</button>
-      </div>
-      <div class="col">
-        <button class="button button-balanced rounded-button">4</button>
-      </div>
-      <div class="col">
-        <button class="button button-balanced rounded-button">5</button>
-      </div>
-      <div class="col">
-        <button class="button button-balanced rounded-button">6</button>
-      </div>
-    </div>
-    <div class="item item-image">
-       <img ng-src="{{jillreacher[0].imageURI}}" style="max-width: 50%">
-       <p>
-         {{jillreacher[0].name}}
-       </p>
-       <p>
-         {{jillreacher[0].department}}
-       </p>
-       <p>
-         {{jillreacher[0].title}}
-       </p>
-    </div>
-    <div class="item">
-    <a class="button" ui-sref="getbadge">Get Badge</a>
-  </ion-content>
+  <ion-content class="">
+    <!-- <div class="row">
+    <div class="col">
+    <button class="button button-balanced rounded-button">1</button>
+  </div>
+  <div class="col">
+  <button class="button button-balanced rounded-button">2</button>
+</div>
+<div class="col">
+<button class="button button-balanced rounded-button">3</button>
+</div>
+<div class="col">
+<button class="button button-balanced rounded-button">4</button>
+</div>
+<div class="col">
+<button class="button button-balanced rounded-button">5</button>
+</div>
+<div class="col">
+<button class="button button-balanced rounded-button">6</button>
+</div>
+</div> -->
+<div class="item item-image no-border no-background padding ">
+  <div class="custom-avatar">
+    <img ng-src="{{jillreacher[0].imageURI}}" class="badge-photo">
+  </div>
+  <div class="padding">
+
+
+    <p style="font-size: 1rem;">
+      {{jillreacher[0].name}}
+    </p>
+    <p style="font-size: 0.9375rem; color: #2b2f35; font-family:'OpenSans'">
+      {{jillreacher[0].department}}
+    </p>
+    <p style="font-size: 0.9375rem; color: #2b2f35; font-family:'OpenSans'">
+      {{jillreacher[0].title}}
+    </p>
+  </div>
+  <div class="padding">
+    <button ui-sref="home" class="button button-block button-positive">FULL TIME EMPLOYEE</button>
+
+
+  </div>
+  <div class="padding">
+    <img ng-src="img/QR-Code.png" style="max-width:40%">
+  </div>
+  <div class="padding">
+    <p style="font-family:MontserratSemiBold; color: #1980b8; font-size: 1rem">
+      ADD TO PASSBOOK
+    </p>
+  </div>
+</div>
+<!-- <div class="item">
+<a class="button" ui-sref="getbadge">Get Badge</a> -->
+</ion-content>
 </ion-view>
