@@ -27,6 +27,7 @@ $royal:                           #406571 !default;
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
+
 @font-face {
   font-family: 'MontserratSemiBold';
   src: url('..//fonts/Montserrat-SemiBold.otf') format('opentype');
@@ -46,6 +47,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   font-family: 'OpenSans';
   src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
 }
+
 
 // @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 $headings-font-family: 'Montserrat';

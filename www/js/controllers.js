@@ -4,18 +4,18 @@ angular.module('starter.controllers', [])
   $compileProvider.imgSrcSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|tel):/);
 })
 .controller('LoginCtrl', function($scope, LoginService, $ionicPopup, $state) {
-    $scope.data = {};
+  $scope.data = {};
 
-    $scope.login = function() {
-        LoginService.loginUser($scope.data.username, $scope.data.password).success(function(data) {
-            $state.go('home');
-        }).error(function(data) {
-            var alertPopup = $ionicPopup.alert({
-                title: 'Login failed!',
-                template: 'Please check your credentials!'
-            });
-        });
-    }
+  $scope.login = function() {
+    LoginService.loginUser($scope.data.username, $scope.data.password).success(function(data) {
+      $state.go('home');
+    }).error(function(data) {
+      var alertPopup = $ionicPopup.alert({
+        title: 'Login failed!',
+        template: 'Please check your credentials!'
+      });
+    });
+  }
 })
 .controller('MainCtrl', function($scope, $location, jillreacher) {
 
@@ -51,7 +51,23 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('CompleteCtrl', function($scope, jillreacher) {
+.controller('CompleteCtrl', function($scope, jillreacher, $cordovaInAppBrowser) {
   $scope.jillreacher = jillreacher;
+
+  $scope.openPASS = function() {
+    
+    // onSuccess Callback
+    function onSuccess() {
+      console.log('Pass shown to the user');
+    }
+
+    // onError Callback receives a string with the error message
+    //
+    function onError(error) {
+      alert('Could now show pass: ' + error);
+    }
+
+    Passbook.downloadPass('https://d.pslot.io/cQY2f', onSuccess, onError);
+  }
 
 });

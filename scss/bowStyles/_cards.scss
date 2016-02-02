@@ -9,8 +9,9 @@
 }
 
 hr {
-  margin-top: 1px;
+  margin-top: 14px !important;
 }
+
 
 // .card-parent {
 //   position: relative;
@@ -82,8 +83,9 @@ hr {
   padding-bottom: 8px;
   padding-top: 10px;
   background-color: rgba(0, 0, 0, 0);
-  margin-top: -5px;
+  // margin-top: -5px;
   margin-bottom: -15px;
+
 }
 
 .item-avatar > img:first-child, .item-avatar .item-image, .item-avatar .item-content > img:first-child, .item-avatar .item-content .item-image, .item-avatar-left > img:first-child, .item-avatar-left .item-image, .item-avatar-left .item-content > img:first-child, .item-avatar-left .item-content .item-image {
@@ -98,6 +100,7 @@ hr {
 
 .detail {
   margin-left: 25px;
+  padding: 4px;
   hr {
     margin-top: 5px;
   }
@@ -200,12 +203,14 @@ hr {
     height:100%;
     width: 50px;
     float: right;
+    line-height: 30px;
   }
   i.left{
     background-color: #7f7f7f;
     height:100%;
     width: 50px;
     float: left;
+    line-height: 30px;
     &:before{
       color:white !important;
     }
@@ -221,13 +226,14 @@ hr {
 
 }
 
-.ion-android-arrow-dropright-circle {
-  font-size: 17px;
+.icon-right-chevron-circle {
+  font-size: 12px;
+
 }
 
 i.icon.ion-android-arrow-dropright-circle {
     &:before {
-      vertical-align:middle;
+      vertical-align:bottom;
     }
 }
 

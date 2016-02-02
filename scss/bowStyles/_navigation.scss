@@ -1,21 +1,21 @@
 i {
-  font-size: 32px;
+  font-size: 22px;
 }
 
 .pane, .view {
   background-color: $stable;
 }
 
-.ion-search {
-  margin-right: 5px;
+.icon-search {
+  margin-right: 7px;
+  margin-top: 5px;
 }
 
-.ion-earth::before{
-
-}
 
 .ion-navicon-round {
+  font-size: 26px;
   margin-left: 5px;
+  margin-top: 3px;
 }
 
 // overriding ionic css
@@ -27,8 +27,8 @@ i {
     font-size: $h1-font-size;
 
   &:before{
-    content: "\f276";
-    font-family: "Ionicons";
+    content: "\e90e";
+    font-family: "icomoon";
     margin-right: 6px;
     font-size: 28px;
     vertical-align: top;
@@ -40,4 +40,10 @@ i {
   border-style: solid;
   border-radius: 4px;
   border-color: #7f7f7f !important;
+}
+
+.login-view {
+  background: url(../img/splash-login-BG.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
