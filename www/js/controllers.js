@@ -30,6 +30,14 @@ angular.module('starter.controllers', [])
         });
     });
 })
+
+.controller('IndexCtrl', function($scope, $ionicSideMenuDelegate) {
+
+  $scope.openMenu = function () {
+    $ionicSideMenuDelegate.toggleLeft();
+  };
+})
+
 .controller('MainCtrl', function($scope, $location, jillreacher) {
 
   $scope.jillreacher = jillreacher;
