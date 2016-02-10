@@ -9989,6 +9989,10 @@ i.icon.ion-android-arrow-dropright-circle:before {
 .employee-container:nth-child(3) .custom-avatar-card {
   border-color: #f15c27; }
 
+.button-passbook {
+  color: #1980b8 !important;
+  font-size: 1rem; }
+
 i {
   font-size: 22px; }
 
