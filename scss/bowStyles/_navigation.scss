@@ -47,3 +47,16 @@ i {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.item-complex .item-content, .item-radio .item-content {
+  background-color: $dark;
+  color: #fff;
+}
+
+.sidemenu {
+  background-color: $dark;
+}
+
+.sideicon {
+  margin-right: 5px;
+}

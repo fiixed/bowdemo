@@ -10030,3 +10030,13 @@ i {
   background: url(../img/splash-login-BG.png);
   background-repeat: no-repeat;
   background-position: center; }
+
+.item-complex .item-content, .item-radio .item-content {
+  background-color: #71716e;
+  color: #fff; }
+
+.sidemenu {
+  background-color: #71716e; }
+
+.sideicon {
+  margin-right: 5px; }
